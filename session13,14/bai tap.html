@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //     let array=[1,3,5,7,9]
+    //     alert(array)
+    // alert(array.length)
+    //     array.push(2,4,6,8)
+    //     alert(array)
+    // array[19]=20
+
+
+    // Bài 1
+    // let data=[2,4,1,3,5];
+    // let num = data.every(function (data,index) {
+    //     return data%2 === 0
+    // })
+    // alert(num)
+
+
+    // Bài 2
+    // let data=[1,-3,-5,4]
+    // let num = data.filter(function (data, index) {
+    //     return data>=0
+    // })
+    // alert(num)
+
+
+    // Bài 3
+    // let data=[1,-3,-5,4]
+    // let index =data.findIndex(function (el){
+    //  return el >0
+    // })
+    // let value =data.find(function (el){
+    //     return el >0
+    // })
+    // if (value>=0){
+    //     alert(`${index}, ${value}`)
+    // }else {
+    //     alert("No result")
+    // }
+
+
+    // Bài 4
+    // let data = [10, 8, 15, 22, 5];
+    // let myArr=[];
+    // data.forEach(function(element) {
+    //     if (element % 5 === 0) {
+    //         myArr.push(element)
+    //     }
+    // });
+    // alert(myArr)
+
+
+    // Bài 5
+    //  let data = [1, 2, 3, 4, 5];
+    // let num=data.includes(5)
+    //
+    // if (num === true){
+    //     alert('yes')
+    // } else {
+    //     alert('no')
+    // }
+
+
+    // Bài 6
+    // let data = [1,2,3]
+    // let str= data.join(", ")
+    // alert(str)
+
+
+    // Bài 7
+    // let data = [2,-1,-8];
+    // let result = data.map((num) =>Math.abs(num));
+    // alert(result);
+
+
+    // Bài 8
+    // let data = ['A', 'B', 'C'];
+    // let newData= data.pop()
+    // let newData2 = data.shift()
+    // let newData3= data.push(" X ")
+    // alert(data)
+
+
+    // Bài 9
+    // let data=[9,8,7,6,5]
+    // let newData=data.sort()
+    // let newData2= newData.shift()
+    // alert(newData2)
+
+
+    // Bài 10
+
+    // let test;
+    // let myArray=[]
+    // let shouldExit=false
+    // let allNumber=parseInt(prompt("Nhap so phan tu cua mang: "))
+    // for (let i=0;i<allNumber;i++){
+    //     let number=prompt(`Nhap gia tri thu ${i} cua mang: `)
+    //     myArray.push(number)
+    // }
+    // let needIndex=prompt(`Nhap gia tri can xoa trong mang da nhap: `)
+    //
+    // while(!shouldExit){
+    //     var index=myArray.findIndex(function (item) {
+    //         return item === needIndex;})
+    //     if (index>=0){
+    //         myArray.splice(index,1)}
+    //     else{
+    //         shouldExit=true;
+    //     }
+    // }
+    // console.log(myArray);
+
+
+    // Bài 1
+    // let data = "my-short-string"
+    // function newData(str) {
+    //     return str
+    //         .split('-') // Tách chuỗi thành mảng các từ dựa trên dấu gạch ngang
+    //         .map((word, index) => {
+    //             if (index === 0) {
+    //                 // Giữ nguyên từ đầu tiên
+    //                 return word;
+    //             } else {
+    //                 // Chuyển đổi các từ sau dấu gạch ngang thành chữ hoa chữ cái đầu tiên
+    //                 return word.charAt(0).toUpperCase() + word.slice(1);
+    //             }
+    //         })
+    //         .join(''); // Kết hợp mảng các từ thành một chuỗi
+    // }
+    // alert(newData(data))
+
+
+    // Bai 2
+    // const arr = [1, 2, 3, 4, 9, 6, 7, 8, 5];
+    // const a = parseInt(prompt("Nhap so"));
+    // const b = parseInt(prompt("Nhap so"));
+    // // Khởi tạo một mảng rỗng
+    // let filteredArr = [];
+    // function filterRange(arr, a, b) {
+    //     // Duyệt qua từng phần tử trong mảng đầu vào
+    //     for (let i of arr) {
+    //         const element = arr[i];
+    //         // Kiểm tra nếu phần tử nằm giữa a và b
+    //         if (element >= a && element <= b) {
+    //             filteredArr.push(element);
+    //         }
+    //     }
+    //     return filteredArr;
+    // }
+    // const result = filterRange(arr, a, b);
+    // console.log(result);
+
+
+    // Bai 3
+    // const arr = [1, 2, 3, 4, 9, 6, 7, 8, 5];
+    // const a = parseInt(prompt("Nhap so"));
+    // const b = parseInt(prompt("Nhap so"));
+    //
+    // filterRangeInPlace(arr, a, b);
+    // function filterRangeInPlace(arr, a, b) {
+    //     // Duyệt qua từng phần tử trong mảng
+    //     for (let i = 0; i < arr.length; i++) {
+    //         const element = arr[i];
+    //
+    //         // Kiểm tra nếu phần tử không nằm trong khoảng a và b
+    //         if (element < a || element > b) {
+    //             // Loại bỏ phần tử khỏi mảng
+    //             arr.splice(i, 1);
+    //             // Giảm giá trị của i để duyệt tiếp các phần tử sau khi loại bỏ
+    //             // i--;
+    //         }
+    //     }
+    // }
+    // filterRangeInPlace(arr, a, b);
+    // console.log(arr);
+
+
+    // let myStr=[1,2,5,9,3,4,12]
+    // let a=3
+    // let b=7
+    // myStr=myStr.filter(function (element){
+    //     if(element>=3&&element<=7){
+    //         return element;
+    //     }
+    //
+    // })
+    // console.log(myStr)
+
+
+    // function filterRangeInPlace(arr,a,b){
+    //       return myStr.filter(item=>item>=a && item<=b)
+    // }
+    //
+    // const  result =filterRangeInPlace(myStr,3,7)
+    // console.log(result)
+
+
+    // Bai 4
+    // let arr = [5, 2, 1, -10, 8];
+    // arr.sort(function (a,b){
+    //     return b-a;
+    // })
+    // alert(arr)
+
+
+    let arr = [1,2,3,4,5,6,7,8,9,10];
+    let output = arr.sort(function (a, b) {
+        return b - a;
+    });
+    // console.log(output.join(" "))
+    document.write(output.join(" "))
+
+
+    // Bai 5
+    // function copySorted(arr) {
+    //     // Tạo một bản sao của mảng gốc
+    //     let sortedArr = arr.slice();
+    //
+    //     // Sắp xếp mảng sao chép
+    //     sortedArr.sort();
+    //
+    //     return sortedArr;
+    // }
+    // let arr = ["HTML", "JavaScript", "CSS"];
+    // let sorted = copySorted(arr);
+    // console.log(sorted);
+</script>
+</body>
+</html>

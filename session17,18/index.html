@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="timer"></div>
+<script>
+    // let myInfo={
+    //     name:"Quan",
+    //     age:24,
+    //     address:"TPHCM",
+    //     getName:function () {
+    //         return this.name;
+    //     }
+    //
+    // }
+    // console.log(myInfo)
+    // myInfo.getName()
+    // myInfo.email="asdfasda";
+    // myInfo[`aaa`]="bbb";
+
+
+
+ // var date = new Date();
+ //  var day = date.getDate()
+ //    var month = date.getMonth()
+ //    var year = date.getFullYear()
+ //
+ //
+ //    console.log(`${day}/${month +1}/${year}`)
+
+
+
+
+                                //     Bai 1
+    // let date = new Date();
+    // let yearNow = date.getFullYear();
+    //
+    // function age(name, year_of_birth) {
+    //     let age = yearNow - year_of_birth;
+    //     let person = {
+    //         name: name,
+    //         year_of_birth: year_of_birth,
+    //         address: "Ha Noi"
+    //     };
+    //
+    //     console.log(person);
+    //     console.log(`${person.name} is ${age} years old`);
+    // }
+    // age("Tom", 1988);
+
+
+
+                                       //     Bài 2
+    // let object1 = { foo: "bar", a: 5 };
+    // let object2 = { name: "foo", d: 10 };
+    //
+    // let object3 = { ...object2, ...object1 };
+    //
+    // console.log(object3);
+
+
+                                         // Bài 3
+    // const year = parseInt(prompt("Input year: "));
+    // const month = parseInt(prompt("Input year: "));
+    // function getLastDayOfMonth(year, month) {
+    //     switch (month) {
+    //         case 1:
+    //         case 3:
+    //         case 5:
+    //         case 7:
+    //         case 8:
+    //         case 10:
+    //         case 12:
+    //             alert(31);
+    //             break;
+    //         case 4:
+    //         case 6:
+    //         case 9:
+    //         case 11:
+    //             alert(30);
+    //             break;
+    //         case 2:
+    //             if ((year !== 4 && year !== 100) || year === 400) {
+    //                 alert(29);
+    //                 break;
+    //             } else {
+    //                 alert(28);
+    //             }
+    //     }
+    // }
+    // getLastDayOfMonth(year, month);
+
+
+                                         //     Bài 4
+    // let year = parseInt(prompt("Nhập năm sinh của bạn:"));
+    // let yearNow = new Date().getFullYear();
+    // let age = yearNow - year;
+    //
+    // console.log("Tuổi : " + age);
+
+
+
+
+                                         //     Bài 5
+    // var input = parseInt(prompt('Hãy nhập vào thời gian bạn mốn bắt đầu đếm ngược (số phút): '));
+    // var startTime = input * 60;
+    //
+    // displayTime(startTime);
+    //
+    // var countdownInterval = setInterval(function () {
+    //     startTime--;
+    //     displayTime(startTime);
+    //
+    //     if (startTime === 0) {
+    //         clearInterval(countdownInterval);
+    //         alert("Hết thời gian!");
+    //     }
+    // }, 1000);
+    //
+    // function displayTime(timeInSeconds) {
+    //     var minutes = Math.floor(timeInSeconds / 60);
+    //     var seconds = timeInSeconds % 60;
+    //
+    //     var displayMinutes = minutes < 10 ? "0" + minutes : minutes;
+    //     var displaySeconds = seconds < 10 ? "0" + seconds : seconds;
+    //
+    //     document.getElementById('timer').innerHTML=(`${displayMinutes}:${displaySeconds} <br>`)
+    // }
+
+
+</script>
+</body>
+</html>
