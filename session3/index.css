@@ -1,0 +1,64 @@
+
+h1 {
+    border: solid 1px;padding: 5px;
+}
+#div1 {
+    padding: 7rem;
+
+}
+#table-company th{
+    border: 1px solid crimson;
+}
+#table-company td{
+    border: 1px solid crimson;
+}
+#table-company{
+    border-collapse: collapse;
+    width: 50%;
+}
+#table-company th,td{
+    text-align: left;
+
+}
+
+
+li:first-child::before {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    /*background-image: url("https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+li:nth-child(2)::before {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    /*background-image: url("https://img.freepik.com/free-vector/cup-tea-vector-realistic-isolated-white-illlustration-plate_1268-18066.jpg?w=2000");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+li:nth-child(3)::before {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    /*background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/Coca_Cola_Marketing_Strategy_2022.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+.course{
+    background-color: #8a2be2;
+padding: 20px;
+
+}
+.course li {
+    background-color: #adff2e;
+
+
+}

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+:root {
+    --primary-color: #F53E2D;
+}
+ul {
+    list-style: none;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+    color: #fff;
+    /*background-color: #F53E2D;*/
+    background: linear-gradient(180deg, #F53E2D, #FE6333);
+    gap: 15px;
+}
+.icon {
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-left: 10px;
+}
+header input {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+header > i {
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 25px;
+    border-radius: 5px;
+}
+.header_nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 40px;
+}
+.controller {
+    height: 80px;
+    margin-bottom: 10px;
+}
+.controller ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items: end;
+}
+.controller ul li {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+main {
+    background-color: #eeeeee;
+    justify-content: space-around;
+
+}
+.content {
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    padding: 25px 0 50px;
+    font-size: 24px;
+
+
+}
+.content-nav {
+    width: 300px;
+    margin-right: 15px
+}
+.content__nav--top {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 25px 15px;
+    border-bottom: 4px solid #eeeeee;
+    background-color: #fff;
+}
+.nav_list {
+    padding: 15px 0;
+    background-color: #fff;
+}
+.nav_item {
+    padding: 15px;
+}
+.nav_item.active {
+    color: #F53E2D;
+}
+.content_main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 10px;
+
+}
+.item {
+    width: calc(100% / 5 - 10px);
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 15px 10px;
+    margin-left: 2px;
+}
+.item img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+footer{
+    display: flex;
+    border-top: 4px solid red;
+    justify-content: center;
+    gap: 30px;
+
+}
+.title{
+    font-weight: 600;
+    line-height: 50px;
+
+}
+footer div ul li{
+    line-height: 30px;
+}
+.heart {
+    color: purple;
+}
+.price{
+    color: red;
+}

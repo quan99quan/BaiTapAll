@@ -1,0 +1,36 @@
+header {
+    background-image: url("../session1/BT/img/img/beach3.jpg");
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+h1 {
+    position: absolute;
+    background-color: rgba(191, 171, 90, 0.8);
+    bottom: 50px;
+    font-size: 60px;
+    padding-right: 100px;
+}
+
+.first, .second {
+    display: flex;
+    margin: 40px auto;
+    line-height: 40px;
+    gap: 10px;
+
+}
+
+.first--line {
+    border-top: 8px solid yellow;
+
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
